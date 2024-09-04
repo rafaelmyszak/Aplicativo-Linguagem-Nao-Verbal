@@ -1,0 +1,133 @@
+[gd_scene load_steps=10 format=3 uid="uid://bu4mbrew8gkr8"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_88rhp"]
+[ext_resource type="Texture2D" uid="uid://ddgxwjbknqspx" path="res://img/ok.png" id="1_uvxi0"]
+[ext_resource type="Texture2D" uid="uid://brwv75ivj6mxb" path="res://img/M1.png" id="2_3dmhm"]
+[ext_resource type="Texture2D" uid="uid://c3m0b87cnwbc3" path="res://img/M2.png" id="3_j71u4"]
+[ext_resource type="Texture2D" uid="uid://dwudnylxoc3nh" path="res://img/M3.png" id="4_0x34d"]
+[ext_resource type="Texture2D" uid="uid://bbg7r38dnwjgv" path="res://img/M4.png" id="5_yb8c5"]
+[ext_resource type="Texture2D" uid="uid://dnhs6xtjqs1st" path="res://img/M5.png" id="6_od8ey"]
+[ext_resource type="Texture2D" uid="uid://ddlcis3o6sohy" path="res://img/M6.png" id="7_uh2a4"]
+[ext_resource type="FontFile" uid="uid://rsqs5rxer0w8" path="res://times new roman.ttf" id="9_krijn"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_88rhp")
+metadata/_edit_horizontal_guides_ = [161.0]
+metadata/_edit_vertical_guides_ = [25.0, 382.0]
+
+[node name="imgBackground" type="Sprite2D" parent="."]
+position = Vector2(-11, 0)
+scale = Vector2(0.53875, 0.535865)
+texture = ExtResource("1_uvxi0")
+centered = false
+
+[node name="btnM1" type="TextureButton" parent="."]
+offset_left = 79.0
+offset_top = 161.0
+offset_right = 184.0
+offset_bottom = 266.0
+texture_normal = ExtResource("2_3dmhm")
+
+[node name="btnM2" type="TextureButton" parent="."]
+offset_left = 229.0
+offset_top = 161.0
+offset_right = 334.0
+offset_bottom = 266.0
+texture_normal = ExtResource("3_j71u4")
+
+[node name="btnM3" type="TextureButton" parent="."]
+offset_left = 79.0
+offset_top = 326.0
+offset_right = 184.0
+offset_bottom = 431.0
+texture_normal = ExtResource("4_0x34d")
+
+[node name="btnM4" type="TextureButton" parent="."]
+offset_left = 229.0
+offset_top = 326.0
+offset_right = 334.0
+offset_bottom = 431.0
+texture_normal = ExtResource("5_yb8c5")
+
+[node name="btnM5" type="TextureButton" parent="."]
+offset_left = 79.0
+offset_top = 499.0
+offset_right = 184.0
+offset_bottom = 604.0
+texture_normal = ExtResource("6_od8ey")
+
+[node name="btnM6" type="TextureButton" parent="."]
+offset_left = 229.0
+offset_top = 499.0
+offset_right = 334.0
+offset_bottom = 604.0
+texture_normal = ExtResource("7_uh2a4")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 79.0
+offset_top = 266.0
+offset_right = 176.0
+offset_bottom = 289.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_krijn")
+theme_override_font_sizes/font_size = 18
+text = "Alimentação"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 229.0
+offset_top = 266.0
+offset_right = 326.0
+offset_bottom = 289.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_krijn")
+theme_override_font_sizes/font_size = 18
+text = "Higiene
+"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 79.0
+offset_top = 431.0
+offset_right = 159.0
+offset_bottom = 454.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_krijn")
+theme_override_font_sizes/font_size = 18
+text = "Tenho dor"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 229.0
+offset_top = 431.0
+offset_right = 329.0
+offset_bottom = 454.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_krijn")
+theme_override_font_sizes/font_size = 18
+text = "Minha roupa"
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 79.0
+offset_top = 604.0
+offset_right = 180.0
+offset_bottom = 627.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_krijn")
+theme_override_font_sizes/font_size = 18
+text = "Lazer/Estudo"
+
+[node name="Label6" type="Label" parent="."]
+offset_left = 229.0
+offset_top = 604.0
+offset_right = 327.0
+offset_bottom = 627.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_krijn")
+theme_override_font_sizes/font_size = 18
+text = "Sentimentos"
+
+[connection signal="tree_exited" from="." to="." method="_on_tree_exited"]
+[connection signal="pressed" from="btnM1" to="." method="_on_btn_m_1_pressed"]
+[connection signal="pressed" from="btnM2" to="." method="_on_btn_m_2_pressed"]
+[connection signal="pressed" from="btnM3" to="." method="_on_btn_m_3_pressed"]
+[connection signal="pressed" from="btnM4" to="." method="_on_btn_m_4_pressed"]
+[connection signal="pressed" from="btnM5" to="." method="_on_btn_m_5_pressed"]
+[connection signal="pressed" from="btnM6" to="." method="_on_btn_m_6_pressed"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpmwqu6qvav60"]
+
+[ext_resource type="AudioStream" uid="uid://cbqwrwio3sbsc" path="res://audio/music.mp3" id="1_vrstq"]
+
+[node name="Som" type="Node2D"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_vrstq")
+volume_db = -4.685

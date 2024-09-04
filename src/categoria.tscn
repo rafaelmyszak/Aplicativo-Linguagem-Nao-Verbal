@@ -1,0 +1,81 @@
+[gd_scene load_steps=5 format=3 uid="uid://j5plyy8x1sw8"]
+
+[ext_resource type="Script" path="res://categoria.gd" id="1_f4hq4"]
+[ext_resource type="Texture2D" uid="uid://ddgxwjbknqspx" path="res://img/ok.png" id="1_x5q2h"]
+[ext_resource type="Texture2D" uid="uid://cmxm6ihb1rf2y" path="res://img/MV.png" id="2_kux2f"]
+[ext_resource type="Texture2D" uid="uid://c3m0b87cnwbc3" path="res://img/M2.png" id="4_ytw2g"]
+
+[node name="Categoria" type="Node2D"]
+script = ExtResource("1_f4hq4")
+
+[node name="imgBackground" type="Sprite2D" parent="."]
+position = Vector2(-11, 0)
+scale = Vector2(0.53875, 0.535865)
+texture = ExtResource("1_x5q2h")
+centered = false
+
+[node name="btnVoltar" type="TextureButton" parent="."]
+offset_left = 46.0
+offset_top = 640.0
+offset_right = 131.0
+offset_bottom = 706.0
+texture_normal = ExtResource("2_kux2f")
+
+[node name="btnF1" type="TextureButton" parent="."]
+offset_left = 73.0
+offset_top = 129.0
+offset_right = 178.0
+offset_bottom = 234.0
+texture_normal = ExtResource("4_ytw2g")
+
+[node name="btnF2" type="TextureButton" parent="."]
+offset_left = 236.0
+offset_top = 129.0
+offset_right = 341.0
+offset_bottom = 234.0
+texture_normal = ExtResource("4_ytw2g")
+
+[node name="btnF3" type="TextureButton" parent="."]
+offset_left = 73.0
+offset_top = 261.0
+offset_right = 178.0
+offset_bottom = 366.0
+texture_normal = ExtResource("4_ytw2g")
+
+[node name="btnF4" type="TextureButton" parent="."]
+offset_left = 236.0
+offset_top = 259.0
+offset_right = 341.0
+offset_bottom = 364.0
+texture_normal = ExtResource("4_ytw2g")
+
+[node name="btnF5" type="TextureButton" parent="."]
+offset_left = 73.0
+offset_top = 393.0
+offset_right = 178.0
+offset_bottom = 498.0
+texture_normal = ExtResource("4_ytw2g")
+
+[node name="btnF6" type="TextureButton" parent="."]
+offset_left = 236.0
+offset_top = 393.0
+offset_right = 341.0
+offset_bottom = 498.0
+texture_normal = ExtResource("4_ytw2g")
+
+[node name="btnF7" type="TextureButton" parent="."]
+offset_left = 236.0
+offset_top = 526.0
+offset_right = 341.0
+offset_bottom = 631.0
+texture_normal = ExtResource("4_ytw2g")
+
+[connection signal="tree_exited" from="." to="." method="_on_tree_exited"]
+[connection signal="pressed" from="btnVoltar" to="." method="_on_btn_voltar_pressed"]
+[connection signal="pressed" from="btnF1" to="." method="_on_btn_f_1_pressed"]
+[connection signal="pressed" from="btnF2" to="." method="_on_btn_f_2_pressed"]
+[connection signal="pressed" from="btnF3" to="." method="_on_btn_f_3_pressed"]
+[connection signal="pressed" from="btnF4" to="." method="_on_btn_f_4_pressed"]
+[connection signal="pressed" from="btnF5" to="." method="_on_btn_f_5_pressed"]
+[connection signal="pressed" from="btnF6" to="." method="_on_btn_f_6_pressed"]
+[connection signal="pressed" from="btnF7" to="." method="_on_btn_f_7_pressed"]
